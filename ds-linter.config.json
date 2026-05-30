@@ -1,0 +1,60 @@
+{
+  "prefix": "bricks",
+  "components": [
+    {
+      "selector": "bricks-button",
+      "inputs": [
+        { "name": "variant", "required": true, "values": ["primary", "secondary", "ghost"] },
+        { "name": "size", "required": false, "values": ["sm", "md", "lg"] },
+        { "name": "disabled", "required": false }
+      ],
+      "deprecated": false
+    },
+    {
+      "selector": "bricks-card-legacy",
+      "deprecated": true,
+      "replacement": "bricks-card"
+    },
+    {
+      "selector": "bricks-card",
+      "inputs": [
+        { "name": "title", "required": false },
+        { "name": "elevated", "required": false }
+      ],
+      "deprecated": false
+    },
+    {
+      "selector": "bricks-spinner",
+      "inputs": [
+        { "name": "size", "required": false, "values": ["sm", "md", "lg"] }
+      ],
+      "deprecated": false
+    },
+    {
+      "selector": "bricks-input",
+      "inputs": [
+        { "name": "label", "required": true },
+        { "name": "placeholder", "required": false },
+        { "name": "disabled", "required": false }
+      ],
+      "deprecated": false
+    },
+    {
+      "selector": "bricks-modal",
+      "inputs": [
+        { "name": "title", "required": true },
+        { "name": "isOpen", "required": true }
+      ],
+      "deprecated": false
+    }
+  ],
+  "knownSelectors": [
+    "bricks-button", "bricks-card", "bricks-spinner",
+    "bricks-input", "bricks-modal", "bricks-badge",
+    "bricks-tooltip", "bricks-table", "bricks-icon"
+  ],
+  "cssRules": {
+    "blockGlobalOverrides": true,
+    "blockNgDeep": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "ds-linter-vscode",
+  "displayName": "DS Linter — Angular Design System",
+  "description": "Real-time Angular design system governance. Catches missing inputs, deprecated components, global CSS overrides and ng-deep violations as you type.",
+  "version": "0.1.0",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Linters", "Other"],
+  "keywords": ["angular", "design system", "linter", "accessibility", "component library"],
+  "activationEvents": ["onLanguage:html", "onLanguage:scss", "onLanguage:css"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "DS Linter",
+      "properties": {
+        "dsLinter.configPath": {
+          "type": "string",
+          "default": "ds-linter.config.json",
+          "description": "Path to your ds-linter.config.json file"
+        },
+        "dsLinter.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable DS Linter"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -watch -p tsconfig.json",
+    "test": "jest"
+  },
+  "dependencies": {
+    "postcss": "^8.4.38",
+    "postcss-scss": "^4.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.3",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0"
+  }
+}
