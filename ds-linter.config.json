@@ -1,8 +1,8 @@
 {
-  "prefix": "my-ds",
+  "prefix": "core",
   "components": [
     {
-      "selector": "my-ds-button",
+      "selector": "core-button",
       "inputs": [
         { "name": "variant", "required": true, "values": ["primary", "secondary", "ghost"] },
         { "name": "size", "required": false, "values": ["sm", "md", "lg"] },
@@ -11,12 +11,12 @@
       "deprecated": false
     },
     {
-      "selector": "my-ds-card-legacy",
+      "selector": "core-card-legacy",
       "deprecated": true,
-      "replacement": "my-ds-card"
+      "replacement": "core-card"
     },
     {
-      "selector": "my-ds-card",
+      "selector": "core-card",
       "inputs": [
         { "name": "title", "required": false },
         { "name": "elevated", "required": false }
@@ -24,14 +24,14 @@
       "deprecated": false
     },
     {
-      "selector": "my-ds-spinner",
+      "selector": "core-spinner",
       "inputs": [
         { "name": "size", "required": false, "values": ["sm", "md", "lg"] }
       ],
       "deprecated": false
     },
     {
-      "selector": "my-ds-input",
+      "selector": "core-input",
       "inputs": [
         { "name": "label", "required": true },
         { "name": "placeholder", "required": false },
@@ -40,7 +40,7 @@
       "deprecated": false
     },
     {
-      "selector": "my-ds-modal",
+      "selector": "core-modal",
       "inputs": [
         { "name": "title", "required": true },
         { "name": "isOpen", "required": true }
@@ -49,9 +49,9 @@
     }
   ],
   "knownSelectors": [
-    "my-ds-button", "my-ds-card", "my-ds-spinner",
-    "my-ds-input", "my-ds-modal", "my-ds-badge",
-    "my-ds-tooltip", "my-ds-table", "my-ds-icon"
+    "core-button", "core-card", "core-spinner",
+    "core-input", "core-modal", "core-badge",
+    "core-tooltip", "core-table", "core-icon"
   ],
   "cssRules": {
     "blockGlobalOverrides": true,
