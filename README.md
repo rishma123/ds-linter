@@ -14,7 +14,7 @@ When you build a shared Angular component library used by multiple teams:
 
 - Developers use components without required inputs and only find out at runtime
 - Deprecated components keep getting used because nobody checked the docs
-- Global CSS overrides like `.bricks-button { color: red }` silently break all instances across every app
+- Global CSS overrides like `.my-ds-button { color: red }` silently break all instances across every app
 - `::ng-deep` pierces component encapsulation and breaks with every Angular upgrade
 - Custom one-off components get built when a shared one already exists
 
@@ -86,10 +86,10 @@ Point DS Linter at your design system by adding a `ds-linter.config.json` to you
 
 ```json
 {
-  "prefix": "bricks",
+  "prefix": "my-ds",
   "components": [
     {
-      "selector": "bricks-button",
+      "selector": "my-ds-button",
       "inputs": [
         { "name": "variant", "required": true, "values": ["primary", "secondary", "ghost"] },
         { "name": "disabled", "required": false }
@@ -97,9 +97,9 @@ Point DS Linter at your design system by adding a `ds-linter.config.json` to you
       "deprecated": false
     },
     {
-      "selector": "bricks-card-legacy",
+      "selector": "my-ds-card-legacy",
       "deprecated": true,
-      "replacement": "bricks-card"
+      "replacement": "my-ds-card"
     }
   ],
   "cssRules": {
@@ -131,4 +131,4 @@ Point DS Linter at your design system by adding a `ds-linter.config.json` to you
 Rishma Merkaje Nanaiah — Frontend Engineer, Angular & Enterprise UI Systems
 [portfolio-eta-seven-83.vercel.app](https://portfolio-eta-seven-83.vercel.app)
 
-Inspired by two years of maintaining a shared Angular design system at EnBW Energie Baden-Württemberg AG, used across 7 engineering teams.
+Inspired by real-world experience maintaining a shared Angular design system used across multiple engineering teams.

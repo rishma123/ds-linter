@@ -1,8 +1,8 @@
 {
-  "prefix": "bricks",
+  "prefix": "my-ds",
   "components": [
     {
-      "selector": "bricks-button",
+      "selector": "my-ds-button",
       "inputs": [
         { "name": "variant", "required": true, "values": ["primary", "secondary", "ghost"] },
         { "name": "size", "required": false, "values": ["sm", "md", "lg"] },
@@ -11,12 +11,12 @@
       "deprecated": false
     },
     {
-      "selector": "bricks-card-legacy",
+      "selector": "my-ds-card-legacy",
       "deprecated": true,
-      "replacement": "bricks-card"
+      "replacement": "my-ds-card"
     },
     {
-      "selector": "bricks-card",
+      "selector": "my-ds-card",
       "inputs": [
         { "name": "title", "required": false },
         { "name": "elevated", "required": false }
@@ -24,14 +24,14 @@
       "deprecated": false
     },
     {
-      "selector": "bricks-spinner",
+      "selector": "my-ds-spinner",
       "inputs": [
         { "name": "size", "required": false, "values": ["sm", "md", "lg"] }
       ],
       "deprecated": false
     },
     {
-      "selector": "bricks-input",
+      "selector": "my-ds-input",
       "inputs": [
         { "name": "label", "required": true },
         { "name": "placeholder", "required": false },
@@ -40,7 +40,7 @@
       "deprecated": false
     },
     {
-      "selector": "bricks-modal",
+      "selector": "my-ds-modal",
       "inputs": [
         { "name": "title", "required": true },
         { "name": "isOpen", "required": true }
@@ -49,9 +49,9 @@
     }
   ],
   "knownSelectors": [
-    "bricks-button", "bricks-card", "bricks-spinner",
-    "bricks-input", "bricks-modal", "bricks-badge",
-    "bricks-tooltip", "bricks-table", "bricks-icon"
+    "my-ds-button", "my-ds-card", "my-ds-spinner",
+    "my-ds-input", "my-ds-modal", "my-ds-badge",
+    "my-ds-tooltip", "my-ds-table", "my-ds-icon"
   ],
   "cssRules": {
     "blockGlobalOverrides": true,

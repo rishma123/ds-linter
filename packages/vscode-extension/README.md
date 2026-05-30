@@ -17,17 +17,17 @@ Real-time Angular design system governance inside VS Code.
 ## Config example
 ```json
 {
-  "prefix": "bricks",
+  "prefix": "my-ds",
   "components": [
     {
-      "selector": "bricks-button",
+      "selector": "my-ds-button",
       "inputs": [
         { "name": "variant", "required": true, "values": ["primary", "secondary", "ghost"] }
       ],
       "deprecated": false
     }
   ],
-  "knownSelectors": ["bricks-button", "bricks-card", "bricks-spinner"],
+  "knownSelectors": ["my-ds-button", "my-ds-card", "my-ds-spinner"],
   "cssRules": {
     "blockGlobalOverrides": true,
     "blockNgDeep": true
